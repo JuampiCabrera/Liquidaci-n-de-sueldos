@@ -5,12 +5,12 @@ for (i = 0; i < cantidad; i++) {
     empleadosTotales [i] = [prompt("Nombre y Apellido del empleado " + (i+1)), 0];
 }
 
-const contadorHorasTrabajadas = (nombre,horasTrabajadas)=>{
-    let horaDeEntrada = prompt("hora de entrada")
-    let horaDeSalida = prompt("hora de salida")
+const contadorHorasTrabajadas = (nombre,a)=>{
+    let horaDeEntrada = prompt ("hora de entrada")
+    let horaDeSalida = prompt ("hora de salida")
+    let horasTrabajadas = (horaDeSalida - horaDeEntrada);
     alert(horasTrabajadas)
 }
-
 
 for (i = 0; i < 30; i++){
     for (empleado in empleadosTotales){
