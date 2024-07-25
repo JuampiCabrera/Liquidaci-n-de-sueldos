@@ -1,24 +1,22 @@
-let cantidad = prompt('¿cuantos empleados son?')
-let empleadosTotales = [];
 
-for (i = 0; i < cantidad; i++) {
-    empleadosTotales [i] = [prompt("Nombre y Apellido del empleado " + (i+1)), 0];
-}
+function calcularLiquidacion() {
+    let nombre = document.getElementById('nombre').value;
+    let horasPorDia = parseFloat(document.getElementById('horas').value);
+    let diasTrabajados = parseInt(document.getElementById('dias').value);
+    let valorHora = parseFloat(document.getElementById('valorHora').value);
 
-const contadorHorasTrabajadas = (nombre,a)=>{
-    let horaDeEntrada = prompt ("hora de entrada")
-    let horaDeSalida = prompt ("hora de salida")
-    let horasTrabajadas = (horaDeSalida - horaDeEntrada);
-    alert(horasTrabajadas)
-}
-
-for (i = 0; i < 30; i++){
-    for (empleado in empleadosTotales){
-        contadorHorasTrabajadas(empleadosTotales[empleado][0], empleado);
+    if (!nombre || isNaN(horasPorDia) || isNaN(diasTrabajados) || isNaN(valorHora)) {
+        alert('Por favor complete todos los campos correctamente.');
+        return;
     }
+
+    let horasTotales = horasPorDia * diasTrabajados;
+    let sueldoBruto = horasTotales * valorHora;
+
+    let resultadoHTML = `
+        <h3>Resultado para ${nombre}</h3>
+        <p>Horas totales trabajadas: ${horasTotales.toFixed(2)}</p>
+        <p>Sueldo Bruto: $${sueldoBruto.toFixed(2)}</p>
+    `;
+    document.getElementById('resultado').innerHTML = resultadoHTML;
 }
-
-let resultado = `${empleadosTotales[empleado][0]}:
-cantidad de horas trabajadas:${empleadosTotales[empleado][1]}`
-
-console.log(resultado);
