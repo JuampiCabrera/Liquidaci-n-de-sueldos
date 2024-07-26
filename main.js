@@ -1,8 +1,17 @@
-
+class Jornada {
+    constructor (tipo,horas,){
+        this.tipo=tipo;
+        this.horas;
+    }
+}
+const Jornada1 = new Jornada ("jornada completa",48);
+const Jornada2 = new Jornada ("Media Jornada", 32);
+const Jornada3 =new Jornada ("Jornada 3/4", 28);
+console.log(Jornada)
 function calcularLiquidacion() {
     let nombre = document.getElementById('nombre').value;
+    let Jornada = document.getElementById(Jornada).value;
     let horasPorDia = parseFloat(document.getElementById('horas').value);
-    let diasTrabajados = parseInt(document.getElementById('dias').value);
     let valorHora = parseFloat(document.getElementById('valorHora').value);
 
     if (!nombre || isNaN(horasPorDia) || isNaN(diasTrabajados) || isNaN(valorHora)) {
