@@ -11,6 +11,11 @@ header {
     padding: 10px 20px;
     text-align: center;
 }
+
+main {
+    display: flex;
+    justify-content: center;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -31,21 +36,31 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
-nav ul li a:hover {
-    text-decoration: underline;
-}
 label {
     display: flex;
     margin: 2px;
     align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+#jornada{
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: white;
 }
 
 .formularioHoras {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 400px;
-    height: 400;
+    height: 100%;
+    margin-top: 10px;
     background-color: #7B2CBF;
     border-radius: 5px;
 
@@ -54,8 +69,9 @@ input[type="text"], input[type="number"] {
     width: 200px;
     height: 30px;
     padding: 2px;
+    background-color: white;
     margin: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     border-radius: 4px;
     box-sizing: border-box;
     object-fit: cover;
@@ -67,17 +83,25 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
 }
 button:hover {
     background-color: #3c0870;
 }
 #resultado {
-    width: 400px;
-    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 380px;
+    height: 150px;
     margin: 5px;
     background-color: #9D4EDD;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     border-radius: 4px;
     object-fit: cover;
-
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
 }

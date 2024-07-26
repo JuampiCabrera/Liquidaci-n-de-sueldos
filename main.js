@@ -4,9 +4,9 @@ class Jornada {
         this.cantidadDeHoras=cantidadDeHoras;
     }
 }
-const Jornada1 = new Jornada ("jornada completa",48);
-const Jornada2 = new Jornada ("Media Jornada", 32);
-const Jornada3 =new Jornada ("Jornada 3/4", 28);
+const Jornada1 = new Jornada (document.getElementsByClassName("jornadaCompleta"),48);
+const Jornada2 = new Jornada (document.getElementsByClassName("mediaJornada"), 32);
+const Jornada3 =new Jornada (document.getElementsByClassName("Jornada3/4"), 28);
 
 function calcularLiquidacion() {
     let nombre = document.getElementById('nombre').value;
