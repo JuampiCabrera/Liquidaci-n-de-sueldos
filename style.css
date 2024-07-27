@@ -11,11 +11,6 @@ header {
     padding: 10px 20px;
     text-align: center;
 }
-
-main {
-    display: flex;
-    justify-content: center;
-}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -36,6 +31,24 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.formularioHoras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 100%;
+    margin: 10px;
+    background-color: #7B2CBF;
+    border-radius: 5px;
+
+}
 label {
     display: flex;
     margin: 2px;
@@ -43,6 +56,18 @@ label {
     font-size: 18px;
     font-weight: 600;
     color: white;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    height: 30px;
+    padding: 2px;
+    background-color: white;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    object-fit: cover;
 }
 #jornada{
     width: 200px;
@@ -53,29 +78,6 @@ label {
     background-color: white;
 }
 
-.formularioHoras {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 400px;
-    height: 100%;
-    margin-top: 10px;
-    background-color: #7B2CBF;
-    border-radius: 5px;
-
-}
-input[type="text"], input[type="number"] {
-    width: 200px;
-    height: 30px;
-    padding: 2px;
-    background-color: white;
-    margin: 5px;
-    border: 1px solid white;
-    border-radius: 4px;
-    box-sizing: border-box;
-    object-fit: cover;
-}
 button {
     background-color: #5A189A;
     color: white;
@@ -94,14 +96,17 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 380px;
-    height: 150px;
+    object-fit: cover;
+    width: 440px;
+    height: 100vh;
+    line-height: 5px;
     margin: 5px;
-    background-color: #9D4EDD;
+    margin-left: 10px;
+    background-color: white;
     border: 1px solid white;
     border-radius: 4px;
     object-fit: cover;
     font-size: 18px;
     font-weight: 600;
-    color: white;
+    color: black;
 }
