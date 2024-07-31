@@ -4,9 +4,9 @@ class Jornada {
         this.horas=cantidadDeHoras;
     }
 }
-const Jornada1 = new Jornada ("jornadaCompleta",48);
-const Jornada2 = new Jornada ("mediaJornada", 32);
-const Jornada3 =new Jornada ("Jornada3/4", 28);
+const Jornada1= new Jornada (document.getElementById('jornada') ,48);
+const Jornada2 = new Jornada (document.getElementById('jornada') , 32);
+const Jornada3 =new Jornada (document.getElementById('jornada') , 28);
 
 function calcularLiquidacion() {
     let nombre = document.getElementById('nombre').value;
@@ -31,3 +31,8 @@ function calcularLiquidacion() {
     `;
     document.getElementById('resultado').innerHTML = resultadoHTML;
 }
+
+let btnCalcular = document.getElementById("btnCalcular");
+btnCalcular.addEventListener('click',() => {
+    calcularLiquidacion()
+})

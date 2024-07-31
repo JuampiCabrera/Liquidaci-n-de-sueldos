@@ -43,27 +43,27 @@ main {
     align-items: center;
     flex-direction: row;
     width: 100vw;
-    height: 100%;
+    height: 80vh;
     margin: 10px;
     background-color: #7B2CBF;
     border-radius: 5px;
 
 }
+
 label {
     display: flex;
     margin: 2px;
     align-items: center;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: white;
 }
 
 input[type="text"], input[type="number"] {
-    width: 100%;
-    height: 30px;
-    padding: 2px;
+    width: 80%;
+    height: 25px;
     background-color: white;
-    margin: 5px;
+    margin: 2px;
     border: 1px solid white;
     border-radius: 4px;
     box-sizing: border-box;
@@ -71,7 +71,7 @@ input[type="text"], input[type="number"] {
 }
 #jornada{
     width: 200px;
-    height: 30px;
+    height: 25px;
     font-size: 15px;
     font-weight: 600;
     border-radius: 5px;
@@ -95,10 +95,10 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    text-align:center;
     object-fit: cover;
     width: 440px;
-    height: 100vh;
+    height: 75vh;
     line-height: 5px;
     margin: 5px;
     margin-left: 10px;
