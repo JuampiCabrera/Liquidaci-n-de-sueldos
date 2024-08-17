@@ -1,0 +1,17 @@
+{
+    "jornada": [
+        {
+            "tipo": "jornadaCompleta",
+            "cantidadHoras": 48
+        },
+        {
+            "tipo": "mediaJornada",
+            "cantidadHoras": 24
+        },
+        {
+            "tipo": "jornada3/4",
+            "cantidadHoras": "30"
+        }
+    ]
+    
+}

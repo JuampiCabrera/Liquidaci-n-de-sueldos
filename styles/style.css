@@ -1,3 +1,66 @@
+:root{
+    --transition:all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1) ;
+}
+.contenedorForm{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+    background-color: #5A189A;
+}
+h1 {
+    font-size: 3em;
+}
+.contenedorForm h2{
+    font-size: 2.5em;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.contenedorForm form{
+    padding: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, .1);
+    background-color: #3c0870;
+}
+.contenedorForm form label{
+    width: 100%;
+    padding: 0.2em;
+    margin-bottom: 0.5em;
+}
+.contenedorForm form input{
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border-radius: 9px;
+    border: none;
+    outline-color:#10002B;
+
+}
+.contenedorForm form input[type="submit"]{
+    margin-top: 1.5em;
+    background-color:#10002B;
+    color:aliceblue;
+    transition: var(--transition);
+    font-family: sans-serif;
+}
+.contenedorForm form input[type="submit"]:active{
+    transform: scale(0.97);
+}
+.contenedorForm p{
+    margin-top: 1.5em;
+}
+.contenedorForm p a{
+    text-decoration: none;
+    color:aliceblue;
+}
+
 body {
     font-family: sans-serif;
     background-color: rgb(195, 178, 226);
@@ -32,6 +95,25 @@ nav ul li a {
     text-decoration: none;
 }
 
+.ingreso{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.btnCarga{
+    background-color: #5A189A;
+    color: aliceblue;
+    margin: 1px;
+    border: 0;
+    border-radius: 3px;
+}
+.btnCarga:hover{
+    cursor: pointer;
+    background-color: #3c0870;
+}
+.btnCarga a{
+    color: aliceblue;
+    text-decoration: none;
+}
 main {
     display: flex;
     justify-content: center;
@@ -78,7 +160,7 @@ input[type="text"], input[type="number"] {
     background-color: white;
 }
 
-button {
+.calculo {
     background-color: #5A189A;
     color: white;
     padding: 10px 20px;
@@ -88,7 +170,7 @@ button {
     font-size: 15px;
     font-weight: 500;
 }
-button:hover {
+.calculo:hover {
     background-color: #3c0870;
 }
 #resultado {

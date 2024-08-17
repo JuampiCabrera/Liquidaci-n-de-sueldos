@@ -1,0 +1,79 @@
+{
+    "convenios": [
+        {
+            "convenio": "empleadoDeComercio",
+            "categoria":"vendedor a",
+            "remuneracionBasica": 803719
+        },
+        {
+            "convenio": "empleadoDeComercio",
+            "categoria":"vendedor b",
+            "remuneracionBasica": 820942
+        },
+        {
+            "convenio": "empleadoDeComercio",
+            "categoria":"vendedor c",
+            "remuneracionBasica": 826679
+        },
+        {
+            "convenio": "empleadoDeComercio",
+            "categoria":"vendedor d",
+            "remuneracionBasica": 839307
+        },
+        {
+            "convenio": "uecara",
+            "catgoria":"administrativo analista",
+            "remuneracionBasica": 680957
+        },
+        {
+            "convenio": "uecara",
+            "catgoria":"administrativo auxiliar",
+            "remuneracionBasica": 628630
+        },
+        {
+            "convenio": "uecara",
+            "catgoria":"administrativo ayudante",
+            "remuneracionBasica": 573867
+        },
+        {
+            "convenio": "uecara",
+            "catgoria":"administrativo ayudanteDeSegunda",
+            "remuneracionBasica": 502003
+        },
+        {
+            "convenio": "uthgra",
+            "categoria": 1,
+            "remuneracionBasica": 589410
+        },
+        {
+            "convenio": "uthgra",
+            "categoria": 2,
+            "remuneracionBasica": 617940
+        },
+        {
+            "convenio": "uthgra",
+            "categoria": 3,
+            "remuneracionBasica": 654336
+        },
+        {
+            "convenio": "uthgra",
+            "categoria": 4,
+            "remuneracionBasica": 684185
+        },
+        {
+            "convenio": "uthgra",
+            "categoria": 5,
+            "remuneracionBasica": 722034
+        },
+        {
+            "convenio": "uthgra",
+            "categoria": 6,
+            "remuneracionBasica": 761519
+        },
+        {
+            "convenio": "uthgra",
+            "categoria": 7,
+            "remuneracionBasica": 990248
+        }
+    ]
+}

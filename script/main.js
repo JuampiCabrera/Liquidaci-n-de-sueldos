@@ -1,13 +1,15 @@
-// class Jornada {
-//     constructor (tipoDeJornada,cantidadDeHoras,){
-//         this.tipo=tipoDeJornada;
-//         this.horas=cantidadDeHoras;
-//     }
-// }
-// const jornada1= new Jornada ("Jornada Completa" ,48);
-// const jornada2 = new Jornada ("Media Jornada" , 32);
-// const jornada3 =new Jornada ("Jornada 3/4", 28);
+const user = JSON.parse(localStorage.getItem('login_success')) || false
+if(!user){
+    window.location.href = 'login.html'
+}
 
+const logout = document.getElementById('logout')
+
+logout.addEventListener('click', ()=>{
+    alert('Hasta pronto!')
+    localStorage.removeItem('login_success')
+    window.location.href = 'login.html'
+})
 
 function calcularLiquidacion() {
     let nombre = document.getElementById('nombre').value;
@@ -41,8 +43,15 @@ btnCalcular.addEventListener('click',() => {
     calcularLiquidacion()
 })
 
-function guardarDatosLocalStorage(nombre, horasTotales, sueldoBruto) {
+function guardarDatosLocalStorage(nombre, horasTotales, sueldoBruto, valueTexto) {
     localStorage.nombre = nombre;
     localStorage.horasTotales = horasTotales;
     localStorage.sueldoBruto = sueldoBruto ;
+    localStorage.valueTexto = valueTexto
 }
+
+fetch('/datos.json')
+.then(response => response.json())
+.then(data => {
+    console.log(data)
+})
