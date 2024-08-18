@@ -1,17 +1,20 @@
 {
-    "jornada": [
+    "jornadas": [
         {
-            "tipo": "jornadaCompleta",
-            "cantidadHoras": 48
+            "tipo": "Jornada Completa",
+            "horas": 40
         },
         {
-            "tipo": "mediaJornada",
-            "cantidadHoras": 24
+            "tipo": "Jornada Parcial",
+            "horas": 20
         },
         {
-            "tipo": "jornada3/4",
-            "cantidadHoras": "30"
+            "tipo": "Jornada Reducida",
+            "horas": 30
+        },
+        {
+            "tipo": "Medio Tiempo",
+            "horas": 25
         }
     ]
-    
 }

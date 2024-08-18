@@ -1,79 +1,81 @@
 {
-    "convenios": [
+    "convenios":
+    [
         {
-            "convenio": "empleadoDeComercio",
-            "categoria":"vendedor a",
+            "tipo": "empleadoDeComercio",
+            "categoria": "vendedor a",
             "remuneracionBasica": 803719
         },
         {
-            "convenio": "empleadoDeComercio",
-            "categoria":"vendedor b",
+            "tipo": "empleadoDeComercio",
+            "categoria": "vendedor b",
             "remuneracionBasica": 820942
         },
         {
-            "convenio": "empleadoDeComercio",
-            "categoria":"vendedor c",
+            "tipo": "empleadoDeComercio",
+            "categoria": "vendedor c",
             "remuneracionBasica": 826679
         },
         {
-            "convenio": "empleadoDeComercio",
-            "categoria":"vendedor d",
+            "tipo": "empleadoDeComercio",
+            "categoria": "vendedor d",
             "remuneracionBasica": 839307
         },
         {
-            "convenio": "uecara",
-            "catgoria":"administrativo analista",
+            "tipo": "uecara",
+            "categoria": "administrativo analista",
             "remuneracionBasica": 680957
         },
         {
-            "convenio": "uecara",
-            "catgoria":"administrativo auxiliar",
+            "tipo": "uecara",
+            "categoria": "administrativo auxiliar",
             "remuneracionBasica": 628630
         },
         {
-            "convenio": "uecara",
-            "catgoria":"administrativo ayudante",
+            "tipo": "uecara",
+            "categoria": "administrativo ayudante",
             "remuneracionBasica": 573867
         },
         {
-            "convenio": "uecara",
-            "catgoria":"administrativo ayudanteDeSegunda",
+            "tipo": "uecara",
+            "categoria": "administrativo ayudanteDeSegunda",
             "remuneracionBasica": 502003
         },
         {
-            "convenio": "uthgra",
+            "tipo": "uthgra",
             "categoria": 1,
             "remuneracionBasica": 589410
         },
         {
-            "convenio": "uthgra",
+            "tipo": "uthgra",
             "categoria": 2,
             "remuneracionBasica": 617940
         },
         {
-            "convenio": "uthgra",
+            "tipo": "uthgra",
             "categoria": 3,
             "remuneracionBasica": 654336
         },
         {
-            "convenio": "uthgra",
+            "tipo": "uthgra",
             "categoria": 4,
             "remuneracionBasica": 684185
         },
         {
-            "convenio": "uthgra",
+            "tipo": "uthgra",
             "categoria": 5,
             "remuneracionBasica": 722034
         },
         {
-            "convenio": "uthgra",
+            "tipo": "uthgra",
             "categoria": 6,
             "remuneracionBasica": 761519
         },
         {
-            "convenio": "uthgra",
+            "tipo": "uthgra",
             "categoria": 7,
             "remuneracionBasica": 990248
         }
     ]
+
 }
